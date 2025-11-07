@@ -6,5 +6,12 @@
   "charWithSpaces": "字符数（包含空格）",
   "charWithoutSpaces": "字符数（不包含空格）",
   "wordCount": "单词数",
-  "footer": "所有计算都在浏览器中进行，不会发送到服务器。您的输入文本仅在本地处理，因此可以安全使用。"
+  "footer": "所有计算都在浏览器中进行，不会发送到服务器。您的输入文本仅在本地处理，因此可以安全使用。",
+  "networkMonitor": "网络监视器",
+  "noNetworkRequests": "无网络请求",
+  "download": "下载",
+  "upload": "上传",
+  "duration": "时长",
+  "size": "大小",
+  "noRequests": "无请求"
 }

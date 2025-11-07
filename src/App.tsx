@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Controls } from "./components/Controls";
 import { Header } from "./components/Header";
+import { NetworkMonitor } from "./components/NetworkMonitor";
 import { StatsCard } from "./components/StatsCard";
 import { useDarkMode } from "./hooks/useDarkMode";
 import {
@@ -22,14 +23,14 @@ function App() {
   }, [selectedLanguage, i18n]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 p-4 flex items-center justify-center relative">
+    <div className="min-h-screen bg-white dark:bg-gray-900 p-4 flex flex-col md:flex-row items-start justify-center relative gap-6">
       <Controls
         selectedLanguage={selectedLanguage}
         setSelectedLanguage={setSelectedLanguage}
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
       />
-      <div className="w-full max-w-4xl mt-16 md:mt-0">
+      <div className="flex-1 max-w-4xl mt-16 md:mt-0">
         <Card className="border border-gray-200 dark:border-gray-700">
           <CardBody className="p-8">
             <Header />
@@ -41,7 +42,8 @@ function App() {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 minRows={8}
-                className="text-lg"
+                maxRows={16}
+                style={{ fontSize: "1rem" }} // FIXME: why not working in TailwindCSS? (text-lg)
                 variant="bordered"
               />
             </div>
@@ -64,6 +66,9 @@ function App() {
             </div>
           </CardBody>
         </Card>
+      </div>
+      <div className="w-full md:w-80">
+        <NetworkMonitor />
       </div>
     </div>
   );

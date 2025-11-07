@@ -16,7 +16,7 @@ export const StatsCard = ({ titleKey, value }: StatsCardProps) => {
           {t(titleKey)}
         </p>
         <p className="text-4xl font-bold text-gray-900 dark:text-gray-100">
-          {value}
+          {value.toLocaleString()}
         </p>
       </CardBody>
     </Card>
