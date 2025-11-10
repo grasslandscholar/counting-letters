@@ -47,5 +47,8 @@
   "fileDesc_1": "Test request or error response (no data)",
   "fileDesc_index_js": "Built main JavaScript file (production optimized)",
   "fileDesc_index_css": "Built main stylesheet file (production optimized)",
-  "fileDesc_other": "Other file"
+  "fileDesc_es_js": "ES module bundle file (JavaScript module optimization)",
+  "fileDesc_other": "Other file",
+  "unknownFileToastTitle": "Unknown file detected",
+  "unknownFileToastDesc": "A file requiring security review has been found"
 }

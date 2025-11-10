@@ -1,4 +1,12 @@
-import { Button, Card, CardBody, CardHeader, Tab, Tabs } from "@heroui/react";
+import {
+  addToast,
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
+  Tab,
+  Tabs,
+} from "@heroui/react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAutoScroll } from "../hooks/useAutoScroll";
@@ -59,6 +67,9 @@ const getFileDescription = (fileName: string, t: any): string => {
   if (baseName.match(/^index-.*\.css$/)) {
     return t("fileDesc_index_css");
   }
+  if (baseName.match(/^es-.*\.js$/)) {
+    return t("fileDesc_es_js");
+  }
 
   // 특정 파일 키로 변환
   const key = fileDescriptionKeys[baseName];
@@ -85,12 +96,31 @@ const isUploadEntry = (entry: NetworkEntry) => {
 export const NetworkMonitor = () => {
   const [entries, setEntries] = useState<NetworkEntry[]>([]);
   const [selectedTab, setSelectedTab] = useState("server-to-client");
+  const [unknownFiles, setUnknownFiles] = useState<Set<string>>(new Set());
   const downloadScrollRef = useAutoScroll<HTMLDivElement>([
     entries,
     selectedTab,
   ]);
   const uploadScrollRef = useAutoScroll<HTMLDivElement>([entries, selectedTab]);
   const { t } = useTranslation();
+
+  // 알 수 없는 파일 감지 및 toast 표시
+  useEffect(() => {
+    entries.forEach((entry) => {
+      const baseName = entry.name.split("/").pop()?.split("?")[0] || entry.name;
+      const description = getFileDescription(entry.name, t);
+      if (description === t("fileDesc_other") && !unknownFiles.has(baseName)) {
+        // 알 수 없는 파일 감지
+        setUnknownFiles((prev) => new Set(prev).add(baseName));
+        // toast 표시 (HeroUI의 addToast 사용)
+        addToast({
+          title: t("unknownFileToastTitle"),
+          description: `${baseName}: ${t("unknownFileToastDesc")}`,
+          color: "warning",
+        });
+      }
+    });
+  }, [entries, t, unknownFiles]);
 
   useEffect(() => {
     const observer = new PerformanceObserver((list) => {

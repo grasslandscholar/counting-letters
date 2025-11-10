@@ -47,5 +47,8 @@
   "fileDesc_1": "测试请求或错误响应（无数据）",
   "fileDesc_index_js": "构建的主 JavaScript 文件（生产优化）",
   "fileDesc_index_css": "构建的主样式表文件（生产优化）",
-  "fileDesc_other": "其他文件"
+  "fileDesc_es_js": "ES 模块包文件（JavaScript 模块优化）",
+  "fileDesc_other": "其他文件",
+  "unknownFileToastTitle": "检测到未知文件",
+  "unknownFileToastDesc": "发现需要安全审查的文件"
 }
