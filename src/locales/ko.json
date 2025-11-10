@@ -48,6 +48,7 @@
   "fileDesc_index_js": "빌드된 메인 자바스크립트 파일 (프로덕션용 최적화)",
   "fileDesc_index_css": "빌드된 메인 스타일시트 파일 (프로덕션용 최적화)",
   "fileDesc_es_js": "ES 모듈 번들 파일 (자바스크립트 모듈 최적화)",
+  "fileDesc_features_js": "기능별 번들 파일 (라이브러리 기능 모듈)",
   "fileDesc_other": "기타 파일",
   "unknownFileToastTitle": "알 수 없는 파일 감지",
   "unknownFileToastDesc": "보안 검토가 필요한 파일이 발견되었습니다"

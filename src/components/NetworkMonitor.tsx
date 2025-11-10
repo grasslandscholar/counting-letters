@@ -70,6 +70,9 @@ const getFileDescription = (fileName: string, t: any): string => {
   if (baseName.match(/^es-.*\.js$/)) {
     return t("fileDesc_es_js");
   }
+  if (baseName.match(/^features-.*\.js$/)) {
+    return t("fileDesc_features_js");
+  }
 
   // 특정 파일 키로 변환
   const key = fileDescriptionKeys[baseName];

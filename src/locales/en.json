@@ -48,6 +48,7 @@
   "fileDesc_index_js": "Built main JavaScript file (production optimized)",
   "fileDesc_index_css": "Built main stylesheet file (production optimized)",
   "fileDesc_es_js": "ES module bundle file (JavaScript module optimization)",
+  "fileDesc_features_js": "Feature bundle file (library feature modules)",
   "fileDesc_other": "Other file",
   "unknownFileToastTitle": "Unknown file detected",
   "unknownFileToastDesc": "A file requiring security review has been found"
