@@ -84,7 +84,7 @@ function App() {
             <CardBody className="p-8">
               <Header />
 
-              <div className="mb-8">
+              <div className="mb-8 relative">
                 <Textarea
                   label={t("textareaLabel")}
                   placeholder={t("textareaPlaceholder")}
@@ -94,7 +94,21 @@ function App() {
                   maxRows={16}
                   style={{ fontSize: "1rem" }}
                   variant="bordered"
+                  classNames={{
+                    input: "pr-10",
+                  }}
                 />
+                {text && (
+                  <button
+                    type="button"
+                    onClick={() => setText("")}
+                    className="absolute top-3 right-3 inline-flex items-center justify-center w-8 h-8 rounded text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-500"
+                    aria-label={t("clearButtonLabel")}
+                    title={t("clearButtonLabel")}
+                  >
+                    ×
+                  </button>
+                )}
               </div>
 
               {!isZh ? (
