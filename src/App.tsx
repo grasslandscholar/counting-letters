@@ -57,6 +57,31 @@ function App() {
   }, [selectedLanguage]);
 
   /* =========================
+     🏷️ 문서 제목 갱신
+  ========================= */
+  useEffect(() => {
+    document.title = t("title");
+  }, [t, selectedLanguage]);
+
+  /* =========================
+     🏷️ 메타 태그(설명/OG/Twitter) 업데이트
+  ========================= */
+  useEffect(() => {
+    const desc = t("description");
+    const title = t("title");
+    const setMeta = (selector: string, content: string) => {
+      const el = document.querySelector(selector) as HTMLMetaElement | null;
+      if (el) el.content = content;
+    };
+
+    setMeta("meta[name=description]", desc);
+    setMeta("meta[property='og:title']", title);
+    setMeta("meta[property='og:description']", desc);
+    setMeta("meta[property='twitter:title']", title);
+    setMeta("meta[property='twitter:description']", desc);
+  }, [t, selectedLanguage]);
+
+  /* =========================
      ✅ 3) URL(/en 등)이 있으면
         드롭다운도 거기에 맞추기
   ========================= */

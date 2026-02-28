@@ -1,6 +1,7 @@
 {
   "title": "Letter Counter",
   "description": "Accurately counts the number of characters and words in text",
+  "title": "Letter Counter",
   "textareaLabel": "Text to analyze",
   "textareaPlaceholder": "Enter your text here...",
   "clearButtonLabel": "Clear",

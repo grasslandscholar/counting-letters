@@ -1,6 +1,7 @@
 {
   "title": "文字数カウント",
   "description": "テキストの文字数と単語数を正確に計算します",
+  "title": "文字数カウント",
   "textareaLabel": "分析するテキスト",
   "textareaPlaceholder": "ここにテキストを入力してください…",
   "clearButtonLabel": "クリア",

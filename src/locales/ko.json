@@ -1,6 +1,7 @@
 {
   "title": "글자수 세기",
   "description": "텍스트의 문자 수와 단어 수를 정확하게 계산합니다",
+  "title": "글자수 세기",
   "textareaLabel": "분석할 텍스트",
   "textareaPlaceholder": "여기에 텍스트를 입력하세요...",
   "clearButtonLabel": "초기화",
