@@ -49,6 +49,14 @@ function App() {
   }, [selectedLanguage, i18n]);
 
   /* =========================
+     🌐 HTML lang 속성 유지
+     브라우저가 올바른 시스템 폰트를 고르도록
+  ========================= */
+  useEffect(() => {
+    document.documentElement.lang = selectedLanguage;
+  }, [selectedLanguage]);
+
+  /* =========================
      ✅ 3) URL(/en 등)이 있으면
         드롭다운도 거기에 맞추기
   ========================= */
