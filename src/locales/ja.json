@@ -1,7 +1,6 @@
 {
   "title": "文字数カウント",
   "description": "テキストの文字数と単語数を正確に計算します",
-  "title": "文字数カウント",
   "textareaLabel": "分析するテキスト",
   "textareaPlaceholder": "ここにテキストを入力してください…",
   "clearButtonLabel": "クリア",
@@ -59,8 +58,8 @@
   "fileDesc_es_js": "ESモジュールバンドルファイル（JavaScriptモジュール最適化）",
   "fileDesc_features_js": "機能別バンドルファイル（ライブラリ機能モジュール）",
   "fileDesc_vite_chunk_js": "Viteによって自動生成されたコード分割JavaScriptファイル",
-  "fileDesc_cloudflare_analytics": "Cloudflare提供のWeb分析リクエスト（利用状況の確認、訪問数のみ集計）",
-  "fileDesc_cloudflare_rum": "Cloudflare提供のサイトパフォーマンス測定リクエスト（読み込み速度の改善、速度のみ測定）",
+  "fileDesc_cloudflare_analytics": "Cloudflare の Web 分析ビーコンスクリプト（サイト利用状況と訪問数のみを収集、Cookie/ローカルストレージは使用しません）",
+  "fileDesc_cloudflare_rum": "Cloudflare の RUM パフォーマンスビーコンスクリプト（読み込み速度改善のためのページ性能データを収集、Cookie/ローカルストレージは使用しません）",
   "fileDesc_other": "その他のファイル",
   "unknownFileToastTitle": "不明なファイルを検出",
   "unknownFileToastDesc": "セキュリティ確認が必要なファイルが見つかりました",

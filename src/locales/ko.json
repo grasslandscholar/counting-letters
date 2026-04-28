@@ -1,7 +1,6 @@
 {
   "title": "글자수 세기",
   "description": "텍스트의 문자 수와 단어 수를 정확하게 계산합니다",
-  "title": "글자수 세기",
   "textareaLabel": "분석할 텍스트",
   "textareaPlaceholder": "여기에 텍스트를 입력하세요...",
   "clearButtonLabel": "초기화",
@@ -59,8 +58,8 @@
   "fileDesc_es_js": "ES 모듈 번들 파일 (자바스크립트 모듈 최적화)",
   "fileDesc_features_js": "기능별 번들 파일 (라이브러리 기능 모듈)",
   "fileDesc_vite_chunk_js": "Vite가 자동 생성한 코드 분할 JavaScript 파일",
-  "fileDesc_cloudflare_analytics": "Cloudflare 제공 웹 분석 요청 (이용 현황 확인, 방문 수만 집계)",
-  "fileDesc_cloudflare_rum": "Cloudflare 제공 사이트 성능 측정 요청 (로딩 속도 개선, 속도만 측정)",
+  "fileDesc_cloudflare_analytics": "Cloudflare 웹 분석 비콘 스크립트 (사이트 사용 현황과 방문자 수만 수집, 쿠키·로컬스토리지 미사용)",
+  "fileDesc_cloudflare_rum": "Cloudflare RUM 성능 비콘 스크립트 (페이지 성능 데이터를 수집해 로딩 속도 개선에 활용, 쿠키·로컬스토리지 미사용)",
   "fileDesc_other": "기타 파일",
   "unknownFileToastTitle": "알 수 없는 파일 감지",
   "unknownFileToastDesc": "보안 검토가 필요한 파일이 발견되었습니다",

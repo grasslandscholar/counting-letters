@@ -1,7 +1,6 @@
 {
   "title": "เครื่องนับจำนวนตัวอักษร",
   "description": "นับจำนวนตัวอักษรและคำในข้อความได้อย่างแม่นยำ",
-  "title": "เครื่องนับจำนวนตัวอักษร",
   "textareaLabel": "ข้อความสำหรับวิเคราะห์",
   "textareaPlaceholder": "ป้อนข้อความของคุณที่นี่...",
   "clearButtonLabel": "ล้างข้อความ",
@@ -57,8 +56,8 @@
   "fileDesc_es_js": "ไฟล์บันเดิล ES module (การปรับแต่งโมดูล JavaScript)",
   "fileDesc_features_js": "ไฟล์บันเดิลฟีเจอร์ (โมดูลฟีเจอร์ของไลบรารี)",
   "fileDesc_vite_chunk_js": "ไฟล์ JavaScript ที่ถูกแบ่งโค้ดโดย Vite",
-  "fileDesc_cloudflare_analytics": "คำขอวิเคราะห์เว็บของ Cloudflare (ภาพรวมการใช้งาน นับจำนวนผู้เข้าชมเท่านั้น)",
-  "fileDesc_cloudflare_rum": "คำขอวัดประสิทธิภาพไซต์ของ Cloudflare (ใช้ปรับปรุงความเร็วการโหลด)",
+  "fileDesc_cloudflare_analytics": "สคริปต์บีคอนวิเคราะห์เว็บของ Cloudflare (เก็บเฉพาะภาพรวมการใช้งานและจำนวนผู้เข้าชมเท่านั้น ไม่ใช้คุกกี้หรือ local storage)",
+  "fileDesc_cloudflare_rum": "สคริปต์บีคอน RUM ของ Cloudflare (เก็บข้อมูลประสิทธิภาพหน้าเว็บเพื่อปรับปรุงความเร็วในการโหลด ไม่ใช้คุกกี้หรือ local storage)",
   "fileDesc_other": "ไฟล์อื่น ๆ",
   "unknownFileToastTitle": "ตรวจพบไฟล์ที่ไม่รู้จัก",
   "unknownFileToastDesc": "พบไฟล์ที่ต้องตรวจสอบด้านความปลอดภัย",

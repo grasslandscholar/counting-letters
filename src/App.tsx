@@ -145,15 +145,25 @@ function App() {
               </div>
 
               {!isZh ? (
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                  <StatsCard
-                    titleKey="charWithSpaces"
-                    value={countCharsWithSpaces(text)}
-                  />
+                <div
+                  className={`grid grid-cols-1 gap-6 mb-8 ${
+                    selectedLanguage === "ja"
+                      ? "md:grid-cols-2"
+                      : "md:grid-cols-3"
+                  }`}
+                >
+                  {selectedLanguage !== "ja" && (
+                    <StatsCard
+                      titleKey="charWithSpaces"
+                      value={countCharsWithSpaces(text)}
+                    />
+                  )}
+
                   <StatsCard
                     titleKey="charWithoutSpaces"
                     value={countCharsWithoutSpaces(text)}
                   />
+
                   {selectedLanguage === "ja" ? (
                     <StatsCard
                       titleKey="lineCount"
